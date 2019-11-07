@@ -1,0 +1,25 @@
+{
+   "belongs_to" : {
+      "fetch" : 0
+   },
+   "has_many" : {
+      "fetch" : 0
+   },
+   "sets" : [
+      {
+         "quantity" : "all",
+         "class" : "Casualty"
+      },
+      {
+         "class" : "Crash",
+         "quantity" : "all"
+      },
+      {
+         "class" : "Vehicle",
+         "quantity" : "all"
+      }
+   ],
+   "might_have" : {
+      "fetch" : 0
+   }
+}
