@@ -22,10 +22,13 @@ my $schema = Crash::Schema->connect(
 
 my @points;
 
-my $east_min = 523891;
-my $east_max = 525631;
-my $north_min = 179855;
-my $north_max = 180590;
+#527815 179527
+#528814 178786
+
+my $east_min = 527789;
+my $east_max = 528814;
+my $north_min = 178786;
+my $north_max = 179654;
 
 my $polygon = [
     [grid_to_ll($east_min, $north_min)],
@@ -33,6 +36,7 @@ my $polygon = [
     [grid_to_ll($east_max, $north_max)],
     [grid_to_ll($east_max, $north_min)],
 ];
+use Data::Dumper; say STDERR Dumper $polygon;
 
 foreach my $year (2016..2018)
 {
